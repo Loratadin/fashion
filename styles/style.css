@@ -64,3 +64,25 @@
 .picture--left h3 {
   color: #f6bbbb;
 }
+
+.picture--right {
+  color: #222;
+  z-index: 2;
+  width: 50vw;
+}
+
+.picture--right .picture__content {
+  left: 5%;
+  color: #222;
+}
+
+.picture--right {
+  transform: skew(-30deg);
+  margin-left: -2000px;
+  width: calc(50vw + 2000px);
+}
+
+.picture--right .picture__content-wrap {
+  transform: skew(30deg);
+  margin-left: 2000px;
+}
