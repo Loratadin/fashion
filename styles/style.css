@@ -14,3 +14,16 @@
   min-height: 55vw;
   overflow: hidden;
 }
+
+.picture {
+  position: absolute;
+  width: 100vw;
+  min-height: 55vw;
+  overflow: hidden;
+}
+
+.picture__content-wrap {
+  position: absolute;
+  width: 100vw;
+  min-height: 55vw;
+}
