@@ -86,3 +86,21 @@
   transform: skew(30deg);
   margin-left: 2000px;
 }
+
+.handle {
+  position: absolute;
+  height: 100%;
+  display: block;
+  background-color: #f6bbbb;
+  width: 2px;
+  top: 0;
+  left: 50%;
+  z-index: 3;
+}
+
+.comparison-slider .handle {
+  top: 50%;
+  transform: rotate(30deg) translateY(-50%);
+  height: 200%;
+  transform-origin: top;
+}
