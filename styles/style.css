@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+/*font-family: 'Tangerine', cursive;*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kaushan Script', cursive;
+}
