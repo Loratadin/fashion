@@ -11,21 +11,21 @@
 .comparison-slider {
   position: relative;
   width: 100%;
-  min-height: 55vw;
+  min-height: 55vh;
   overflow: hidden;
 }
 
 .picture {
   position: absolute;
   width: 100vw;
-  min-height: 55vw;
+  min-height: 55vh;
   overflow: hidden;
 }
 
 .picture__content-wrap {
   position: absolute;
   width: 100vw;
-  min-height: 55vw;
+  min-height: 55vh;
 }
 
 .picture__content {
@@ -39,10 +39,10 @@
 
 .picture img {
   position: absolute;
-  width: 35%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: block;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .comparison-slider h3 {
@@ -51,4 +51,16 @@
 
 .comparison-slider p {
   font-size: 8px;
+}
+
+.picture--left {
+  z-index: 1;
+}
+
+.picture-left .picture__content {
+  right: 5%;
+}
+
+.picture--left h3 {
+  color: #f6bbbb;
 }
