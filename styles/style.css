@@ -104,3 +104,45 @@
   height: 200%;
   transform-origin: top;
 }
+
+@media
+/* medium */
+
+(min-width: 451px) {
+  .comparison-slider h3 {
+    font-size: 16px;
+  }
+  .comparison-slider p {
+    font-size: 10px;
+  }
+}
+
+@media
+/* large */
+
+(min-width: 769px) {
+  .comparison-slider h3 {
+    font-size: 20px;
+  }
+  .comparison-slider p {
+    font-size: 14px;
+  }
+  .handle {
+    width: 3.5px;
+  }
+}
+
+@media
+/* extra-large */
+
+(min-width: 1025px) {
+  .comparison-slider h3 {
+    font-size: 24px;
+  }
+  .comparison-slider p {
+    font-size: 18px;
+  }
+  .handle {
+    width: 5px;
+  }
+}
