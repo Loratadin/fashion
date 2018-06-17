@@ -27,3 +27,28 @@
   width: 100vw;
   min-height: 55vw;
 }
+
+.picture__content {
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+.picture img {
+  position: absolute;
+  width: 35%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.comparison-slider h3 {
+  font-size: 12px;
+}
+
+.comparison-slider p {
+  font-size: 8px;
+}
