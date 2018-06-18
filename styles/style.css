@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
-@import url('https://fonts.googleapis.com/css?family=Tangerine');
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
 /*font-family: 'Tangerine', cursive;*/
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", cursive;
 }
 
 .comparison-slider {
@@ -59,10 +59,11 @@
 
 .picture-left .picture__content {
   left: 5%;
+  z-index: 5;
 }
 
 .picture--left h3 {
-  color: #f6bbbb;
+  color: #214569;
 }
 
 .picture--right {
@@ -75,23 +76,11 @@
   right: 5%;
   color: #222;
 }
-
-.picture--right {
-  transform: skew(-30deg);
-  margin-left: -2000px;
-  width: calc(50vw + 2000px);
-}
-
-.picture--right .picture__content-wrap {
-  transform: skew(30deg);
-  margin-left: 2000px;
-}
-
 .handle {
   position: absolute;
   height: 100%;
   display: block;
-  background-color: #f6bbbb;
+  background-color: #214569;
   width: 2px;
   top: 0;
   left: 50%;
@@ -100,15 +89,23 @@
 
 .comparison-slider .handle {
   top: 50%;
-  transform: rotate(30deg) translateY(-50%);
+  transform: rotate(20deg) translateY(-50%);
   height: 200%;
   transform-origin: top;
 }
 
-@media
-/* medium */
+.picture--right {
+  transform: skew(-20deg);
+  margin-left: -2000px;
+  width: calc(50vw + 2000px);
+}
 
-(min-width: 451px) {
+.picture--right .picture__content-wrap {
+  transform: skew(20deg);
+  margin-left: 2000px;
+}
+
+@media /* medium */ (min-width: 451px) {
   .comparison-slider h3 {
     font-size: 16px;
   }
@@ -117,10 +114,7 @@
   }
 }
 
-@media
-/* large */
-
-(min-width: 769px) {
+@media /* large */ (min-width: 769px) {
   .comparison-slider h3 {
     font-size: 20px;
   }
@@ -132,10 +126,7 @@
   }
 }
 
-@media
-/* extra-large */
-
-(min-width: 1025px) {
+@media /* extra-large */ (min-width: 1025px) {
   .comparison-slider h3 {
     font-size: 24px;
   }
