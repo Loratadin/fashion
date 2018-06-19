@@ -53,26 +53,26 @@
   font-size: 8px;
 }
 
-.picture--left {
+.picture--before {
   z-index: 1;
 }
 
-.picture-left .picture__content {
+.picture-before .picture__content {
   left: 5%;
   z-index: 5;
 }
 
-.picture--left h3 {
+.picture--before h3 {
   color: #214569;
 }
 
-.picture--right {
+.picture--after {
   color: #222;
   z-index: 2;
   width: 50vw;
 }
 
-.picture--right .picture__content {
+.picture--after .picture__content {
   right: 5%;
   color: #222;
 }
@@ -94,13 +94,13 @@
   transform-origin: top;
 }
 
-.picture--right {
+.picture--after {
   transform: skew(-20deg);
   margin-left: -2000px;
   width: calc(50vw + 2000px);
 }
 
-.picture--right .picture__content-wrap {
+.picture--after .picture__content-wrap {
   transform: skew(20deg);
   margin-left: 2000px;
 }
