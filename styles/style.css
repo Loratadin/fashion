@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
 @import url("https://fonts.googleapis.com/css?family=Tangerine");
-/*font-family: 'Tangerine', cursive;*/
 
+/* reset css*/
 * {
   margin: 0;
   padding: 0;
-  font-family: "Kaushan Script", cursive;
+  box-sizing: border-box;
+}
+img {
+  border: none;
 }
 
 .comparison-slider {
@@ -29,14 +32,22 @@
 }
 
 .picture__content {
-  width: 25%;
   position: absolute;
-  top: 50%;
+  width: 25%;
+  top: 20%;
+  left: 7%;
+  padding: 2.5%;
   text-align: center;
-  transform: translateY(-50%);
+  z-index: 41;
+}
+.picture--before .picture__content {
+  background-color: rgba(34, 34, 34, 0.75);
+  color: #fff;
+}
+.picture--after .picture__content {
+  background-color: rgba(240, 248, 255, 0.75);
   color: #222;
 }
-
 .picture img {
   position: absolute;
   display: block;
@@ -46,10 +57,19 @@
 }
 
 .comparison-slider h3 {
+  font-family: "Kaushan Script", cursive;
   font-size: 12px;
+  text-transform: uppercase;
+}
+.picture--before h3 {
+  color: #fff;
+}
+.picture--after h3 {
+  color: #214569;
 }
 
 .comparison-slider p {
+  font-family: "Tangerine", cursive;
   font-size: 8px;
 }
 
@@ -57,51 +77,28 @@
   z-index: 1;
 }
 
-.picture-before .picture__content {
-  left: 5%;
-  z-index: 5;
-}
-
-.picture--before h3 {
-  color: #214569;
-}
-
-.picture--after {
-  color: #222;
-  z-index: 2;
-  width: 50vw;
-}
-
-.picture--after .picture__content {
-  right: 5%;
-  color: #222;
-}
 .handle {
   position: absolute;
-  height: 100%;
   display: block;
-  background-color: #214569;
-  width: 2px;
-  top: 0;
+  top: 50%;
   left: 50%;
+  height: 120%;
+  width: 2px;
+  background-color: #214569;
+  transform: rotate(15deg) translateY(-50%);
+  transform-origin: top;
   z-index: 3;
 }
 
-.comparison-slider .handle {
-  top: 50%;
-  transform: rotate(20deg) translateY(-50%);
-  height: 200%;
-  transform-origin: top;
-}
-
 .picture--after {
-  transform: skew(-20deg);
+  transform: skew(-15deg);
   margin-left: -2000px;
   width: calc(50vw + 2000px);
+  z-index: 2;
 }
 
 .picture--after .picture__content-wrap {
-  transform: skew(20deg);
+  transform: skew(15deg);
   margin-left: 2000px;
 }
 
@@ -119,7 +116,7 @@
     font-size: 20px;
   }
   .comparison-slider p {
-    font-size: 14px;
+    font-size: 34px;
   }
   .handle {
     width: 3.5px;
@@ -131,7 +128,7 @@
     font-size: 24px;
   }
   .comparison-slider p {
-    font-size: 18px;
+    font-size: 34px;
   }
   .handle {
     width: 5px;
